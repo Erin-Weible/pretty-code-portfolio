@@ -1,0 +1,371 @@
+/****** FANCY FONTS ******/
+
+@font-face {
+    font-family: Aloha Paradise;
+    src: url('../fonts/aloha-paradise-regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: Aloha Paradise Bold;
+    src: url('../fonts/aloha-paradise-bold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: Atlantis;
+    src: url('../fonts/atlantis-regular.otf') format('opentype');
+}
+
+
+
+/****** BASE STYLES ******/
+
+h1 {
+    font-family: 'Atlantis';
+    font-weight: 100;
+}
+
+h2, h3 {
+    font-family: 'Aloha Paradise';
+    font-weight: 400;
+}
+
+h4, p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+} 
+
+
+/****** GRID ******/
+
+.full-width {
+    width: 1400px;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+.half-width {
+    width: 700px;
+    float: left;
+}
+
+.third-width {
+    width: 465px;
+    float: left;
+}
+
+.fourth-width {
+    width: 350px;
+    float: left;
+}
+
+
+/****** HEADER SECTION ******/
+
+header {
+    height: 817px;
+    background: url('../img/pretty-desktop.png') no-repeat 0px 0px white;
+    background-position: bottom;
+    background-size: cover;
+}
+
+nav {
+    float: left;
+    padding: 40px 420px 0px 450px
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    font-family: 'Aloha Paradise';
+    font-size: 16px;
+    color: black;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding-right: 50px;
+}
+
+#primary-logo {
+  padding-top: 375px;  
+}
+
+
+/****** ABOUT SECTION ******/
+
+#about {
+    background-color: #b5c5c5;
+}
+
+#about h1 {
+    font-size: 200px;
+    color: white;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 90px;
+}
+
+#about img {
+    margin-left: 200px;
+    margin-bottom: 180px;
+}
+
+#about h3 {
+    color: white;
+    font-size: 40px;
+    margin-left: 35px;
+    margin-right: 200px;
+    margin-bottom: 10px;
+    line-height: 40px;
+}
+
+.conjunction-emphasis {
+    font-family: 'Atlantis';
+    font-size: 48px;
+    font-weight: 100;
+}
+
+.first-about-subheader {
+    margin-top: -10px;
+    padding-bottom: 20px;
+}
+
+.second-about-subheader {
+    margin-top: 15px;
+    padding-bottom: 5px;
+}
+#about p {
+    color: white;
+    font-size: 18px;
+    margin-left: 35px;
+    margin-right: 200px;
+    margin-top: 0px;
+}
+
+/****** PORTFOLIO SECTION ******/
+
+#portfolio {
+    background-color:#f7f7f7;
+}
+
+#portfolio .full-width {
+    overflow: hidden;
+    padding-bottom: 130px;
+}
+
+#portfolio h2 {
+    font-size: 48px;
+    color: black;
+    letter-spacing: 3px;
+    text-align: center;
+    padding-top: 70px;
+}
+
+#portfolio h4 {
+    font-size: 24px;
+    color: black;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: -30px;
+}
+
+.top-left-project img {
+    margin-left: 200px;
+    z-index: -1;
+}
+
+.top-left-project h3 {
+    font-size: 40px;
+    text-align: center;
+    padding-left: 260px;
+    margin-top: -270px;
+}
+
+.top-left-project p {
+    font-size: 16px;
+    text-align: center;
+    margin-left: 265px;
+}
+
+.top-left-project .portfolio-button {
+    font-size: 20px;
+    text-align: center;
+    margin-left: 265px;
+    border: 1px solid #e9b8ac;
+    background: #e9b8ac;
+    padding: 10px;
+    width: 175px;
+}
+
+.top-middle-project img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.top-middle-project h3 {
+    font-size: 40px;
+    text-align: center;
+    margin-top: -270px;
+}
+
+.top-middle-project p {
+    font-size: 16px;
+    text-align: center;
+}
+
+.top-middle-project .portfolio-button {
+    font-size: 20px;
+    text-align: center;
+    border: 1px solid #e9b8ac;
+    background: #e9b8ac;
+    padding: 10px;
+    width: 175px;
+    margin-left: 133px;
+}
+
+.top-right-project img {
+    margin-left: -55px;
+    z-index: -1;
+}
+
+.top-right-project h3 {
+    font-size: 40px;
+    text-align: center;
+    margin-top: -270px;
+    margin-right: 255px;
+}
+
+.top-right-project p {
+    font-size: 16px;
+    text-align: center;
+    margin-right: 255px;
+}
+
+.top-right-project .portfolio-button {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 40px;
+    border: 1px solid #e9b8ac;
+    background: #e9b8ac;
+    padding: 10px;
+    width: 175px;
+}
+
+.portfolio-button a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/****** TAGLINE SECTION ******/
+
+#tagline {
+    height: 590px;
+    background-color: #f6dcd7;
+    position: relative;
+}
+
+.center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+
+/****** PROCESS SECTION ******/
+
+#process {
+    height: 720px;
+    background-color: #f7f7f7;
+    position: relative;
+}
+
+#process img {
+    width: 68%;
+}
+
+#process h2 {
+    font-size: 72px;
+    text-align: center;
+    margin-top: 125px;
+}
+
+#process h4 {
+    font-size: 24px;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 120px;
+}
+
+#process p {
+    font-size: 16px;
+    text-align: center;
+}
+
+/****** THIS OR THAT SECTION ******/
+
+#this-or-that {
+    height: 765px;
+    background: url('../img/this-or-that.png') no-repeat 0px 0px #e9b8ac;
+    background-position: center;
+    background-size: auto;
+}
+
+/****** CONTACT SECTION ******/
+
+#contact {
+    height: 344px;
+    background-color: #f7f7f7;
+}
+
+#contact h1 {
+    font-size: 72px;
+    color: black;
+    text-align: center;
+}
+
+#contact h2 {
+    font-family: 'Aloha Paradise';
+    font-size: 30px;
+    color: black;
+    text-align: center;
+}
+
+#contact h2 a {
+    text-decoration: none;
+    color: black;
+}
+
+#contact ul {
+    margin-left: 58px;
+}
+
+#contact ul li {
+    display: inline-block;
+    padding: 10px;
+}
+
+
+/****** FOOTER ******/
+#footer {
+    background-color: #f7f7f7;
+    clear: both;
+}
+
+#footer p, img {
+    text-transform: uppercase;
+    padding: 0px 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.footer-icon {
+    width: 5%;
+}
