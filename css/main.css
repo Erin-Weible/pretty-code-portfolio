@@ -84,7 +84,7 @@
   }
   
 /* ==========================================================================
-     Author's custom styles
+     Author's custom styles - In this case, DESKTOP FIRST, not Mobile
 ========================================================================== *
 
 /****** FANCY FONTS ******/
@@ -123,52 +123,98 @@ h4, p {
     font-weight: normal;
 } 
 
+html {
+  font-size: 16px;
+}
 
-/****** GRID ******/
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  background-color:#f7f7f7;
+  width: 100%;
+}
 
 .full-width {
-    width: 1400px;
-    margin: 0 auto;
-    overflow: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 100%;
 }
 
 .half-width {
-    width: 700px;
-    float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 50%;
 }
 
 .third-width {
-    width: 465px;
-    float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 33.3%;
 }
 
 .fourth-width {
-    width: 350px;
-    float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 25%;
 }
-
 
 /****** HEADER SECTION ******/
 
 header {
-    height: 817px;
-    background: url('../img/pretty-desktop.png') no-repeat 0px 0px white;
-    background-position: bottom;
-    background-size: cover;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('../img/pretty-desktop.png') no-repeat 0px 0px white;
+  background-position: top;
+  background-size: cover;
 }
 
 nav {
-    float: left;
-    padding: 40px 420px 0px 450px
+    display: flex;
+    justify-content: center;
+    padding: 40px 420px 0px 450px;
+    width: 30%;
 }
 
-nav ul li {
-    display: inline-block;
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    flex-flow: row nowrap;
+    list-style-type: none;
+    padding-left: 27px;
+    width: 100%;
 }
 
 nav ul li a {
     font-family: 'Aloha Paradise';
-    font-size: 16px;
+    font-size: 1em;
     color: black;
     letter-spacing: 3px;
     text-transform: uppercase;
@@ -177,7 +223,10 @@ nav ul li a {
 }
 
 #primary-logo {
-  padding-top: 375px;  
+  padding-top: 375px;
+  display: flex;
+  justify-content: center;
+  width: 46%;
 }
 
 
@@ -185,10 +234,15 @@ nav ul li a {
 
 #about {
     background-color: #b5c5c5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 100%;
 }
 
 #about h1 {
-    font-size: 200px;
+    font-size: 12.5em;
     color: white;
     text-align: center;
     margin-top: 80px;
@@ -198,145 +252,121 @@ nav ul li a {
 #about img {
     margin-left: 200px;
     margin-bottom: 180px;
+    display: flex;
+}
+
+#about .half-width {
+  justify-content: flex-end;
+}
+
+.half-width-bio {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-flow: column wrap;
+  width: 50%;
+  margin-bottom: 180px;
 }
 
 #about h3 {
     color: white;
-    font-size: 40px;
-    margin-left: 35px;
+    font-size: 2.5em;
+    margin: 0;
+    line-height: 1;
+    padding-bottom: 16px;
     margin-right: 200px;
-    margin-bottom: 10px;
-    line-height: 40px;
+    padding-left: 25px;
 }
 
 .conjunction-emphasis {
     font-family: 'Atlantis';
-    font-size: 48px;
+    font-size: 1.125em;
     font-weight: 100;
 }
 
-.first-about-subheader {
-    margin-top: -10px;
-    padding-bottom: 20px;
-}
-
-.second-about-subheader {
-    margin-top: 15px;
-    padding-bottom: 5px;
-}
 #about p {
     color: white;
-    font-size: 18px;
-    margin-left: 35px;
+    font-size: 1.125em;
     margin-right: 200px;
-    margin-top: 0px;
+    padding-left: 25px;
+    margin-top: 5px;
+
 }
 
 /****** PORTFOLIO SECTION ******/
 
 #portfolio {
     background-color:#f7f7f7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+    margin: 0;
+    width: 80%;
 }
 
 #portfolio .full-width {
-    overflow: hidden;
-    padding-bottom: 130px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+    padding-bottom: 100px;
+    background-color:#f7f7f7;
 }
 
 #portfolio h2 {
-    font-size: 48px;
+    font-size: 3em;
     color: black;
     letter-spacing: 3px;
     text-align: center;
-    padding-top: 70px;
+    padding-top: 40px;
+    width: 100%;
 }
 
 #portfolio h4 {
-    font-size: 24px;
+    font-size: 1.5em;
     color: black;
     letter-spacing: 1px;
     text-align: center;
     text-transform: uppercase;
     margin-top: -30px;
+    width: 100%;
 }
 
-.top-left-project img {
-    margin-left: 200px;
-    z-index: -1;
+.top-left-project,
+.top-middle-project,
+.top-right-project, 
+.bottom-left-project,
+.bottom-middle-project,
+.bottom-right-project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  height: 400px;
+  background: url('../img/portfolio-box.png') no-repeat 0px 0px;
+  background-position: center;
+  background-size: auto;
 }
 
-.top-left-project h3 {
-    font-size: 40px;
+#portfolio h3 {
+    font-size: 2.5em;
+    line-height: normal;
     text-align: center;
-    padding-left: 260px;
-    margin-top: -270px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 60px 0 0 0;
 }
 
-.top-left-project p {
-    font-size: 16px;
+#portfolio p {
+  text-align: center;
+  font-size: 1em;;
+}
+
+#portfolio .portfolio-button {
+    font-size: 1.25em;
     text-align: center;
-    margin-left: 265px;
-}
-
-.top-left-project .portfolio-button {
-    font-size: 20px;
-    text-align: center;
-    margin-left: 265px;
-    border: 1px solid #e9b8ac;
-    background: #e9b8ac;
-    padding: 10px;
-    width: 175px;
-}
-
-.top-middle-project img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.top-middle-project h3 {
-    font-size: 40px;
-    text-align: center;
-    margin-top: -270px;
-}
-
-.top-middle-project p {
-    font-size: 16px;
-    text-align: center;
-}
-
-.top-middle-project .portfolio-button {
-    font-size: 20px;
-    text-align: center;
-    border: 1px solid #e9b8ac;
-    background: #e9b8ac;
-    padding: 10px;
-    width: 175px;
-    margin-left: 133px;
-}
-
-.top-right-project img {
-    margin-left: -55px;
-    z-index: -1;
-}
-
-.top-right-project h3 {
-    font-size: 40px;
-    text-align: center;
-    margin-top: -270px;
-    margin-right: 255px;
-}
-
-.top-right-project p {
-    font-size: 16px;
-    text-align: center;
-    margin-right: 255px;
-}
-
-.top-right-project .portfolio-button {
-    font-size: 20px;
-    text-align: center;
-    margin-top: 40px;
     border: 1px solid #e9b8ac;
     background: #e9b8ac;
     padding: 10px;
@@ -352,77 +382,114 @@ nav ul li a {
 /****** TAGLINE SECTION ******/
 
 #tagline {
-    height: 590px;
     background-color: #f6dcd7;
-    position: relative;
-}
-
-.center {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 100%;
+    padding: 100px 0 100px 0;
 }
 
 
 /****** PROCESS SECTION ******/
 
 #process {
-    height: 720px;
     background-color: #f7f7f7;
-    position: relative;
-}
-
-#process img {
-    width: 68%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    margin: 0 auto;
+    width: 100%;
+    background: url('../img/process-line.png') no-repeat 0px 0px #f7f7f7;
+    background-position: 45% 42%;
+    background-size: 75%;
 }
 
 #process h2 {
-    font-size: 72px;
+    font-size: 4.5em;
     text-align: center;
     margin-top: 125px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row nowrap;
+    width: 100%;
+}
+
+#process .step-one,
+#process .step-two,
+#process .step-three,
+#process .step-four {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
 }
 
 #process h4 {
-    font-size: 24px;
+    font-size: 1.5em;
     letter-spacing: 1px;
     text-align: center;
     text-transform: uppercase;
-    margin-top: 120px;
+    margin-top: 30px;
+    margin-bottom: 0;
+    padding: 0 60px;
 }
 
 #process p {
-    font-size: 16px;
+    font-size: 1em;
     text-align: center;
+    margin-bottom: 150px;
+    padding: 0 55px;
 }
 
 /****** THIS OR THAT SECTION ******/
 
 #this-or-that {
-    height: 765px;
-    background: url('../img/this-or-that.png') no-repeat 0px 0px #e9b8ac;
-    background-position: center;
-    background-size: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 100%;
+    background-color: #e9b8ac;
 }
 
 /****** CONTACT SECTION ******/
 
 #contact {
-    height: 344px;
     background-color: #f7f7f7;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+    padding-top: 50px;
+    width: 100%;
 }
 
+#contact .third-width {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
+
+#contact .email {
+  padding-bottom: 30px;
+}
+
+
 #contact h1 {
-    font-size: 72px;
+    font-size: 4.5em;
     color: black;
     text-align: center;
+    margin: 0;
 }
 
 #contact h2 {
     font-family: 'Aloha Paradise';
-    font-size: 30px;
+    font-size: 1.875em;
     color: black;
     text-align: center;
 }
@@ -433,12 +500,20 @@ nav ul li a {
 }
 
 #contact ul {
-    margin-left: 58px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    margin: 25px 0 50px 0;
+    padding: 0;
 }
 
 #contact ul li {
-    display: inline-block;
-    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    padding: 20px;
 }
 
 
@@ -446,9 +521,14 @@ nav ul li a {
 #footer {
     background-color: #f7f7f7;
     clear: both;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 100%;
 }
 
-#footer p, img {
+#footer p, #footer img {
     text-transform: uppercase;
     padding: 0px 10px;
     text-align: center;
@@ -456,7 +536,7 @@ nav ul li a {
 }
 
 .footer-icon {
-    width: 5%;
+    width: 15%;
 }
 
 /* ==========================================================================
@@ -545,11 +625,217 @@ nav ul li a {
     EXAMPLE Media Queries for Responsive Design.
     These examples override the primary ('mobile first') styles.
     Modify as content requires.
+
+    This CSS media quaeriers are working in opposite order of Mobile First - so going as Desktop First
     ========================================================================== */
  
- @media only screen and (min-width: 35em) {
-   /* Style adjustments for viewports that meet the condition */
- }
+ @media only screen and (min-width: 768px) and (max-width: 1199px) {
+   /* TABLETS - Style adjustments for viewports that meet the condition */
+  
+  /** BASE STYLES **/
+  
+  /** HEADER SECTION **/
+
+    header {
+      min-height: 505px;
+    }
+    
+    nav {
+      padding: 30px 0 0 40px;
+      width: 42.6%;
+    }
+
+    nav ul {
+        padding-left: 27px;
+        width: 100%;
+    }
+
+    #primary-logo {
+      padding-top: 355px;
+      display: flex;
+      justify-content: center;
+      width: 65%;
+    }
+
+  /** ABOUT SECTION **/
+
+    #about {
+      width: 100%;
+  }
+
+  #about h1 {
+      width: 75%;
+      font-size: 7.8125em;
+  }
+
+  #about img {
+    width: 100%;
+  }
+
+
+
+  #about h3 {
+      font-size: 1.5em;
+      margin-right: 50px;
+  }
+
+  .conjunction-emphasis {
+      font-size: 1.5em;
+  }
+
+  #about p {
+      font-size: 0.875em;
+      margin-right: 50px;
+  }
+
+  /** PORTFOLIO SECTION **/
+
+#portfolio h2 {
+    font-size: 3em;
+}
+
+#portfolio h4 {
+    font-size: 1em;
+}
+
+.top-left-project,
+.top-middle-project,
+.top-right-project, 
+.bottom-left-project,
+.bottom-middle-project,
+.bottom-right-project {
+  width: 50%;
+  background-size: 80%;
+}
+
+#portfolio h3 {
+    font-size: 1.875em;
+}
+
+#portfolio p {
+  font-size: 0.75em;;
+}
+
+#portfolio .portfolio-button {
+    font-size: 1em;
+}
+
+/****** TAGLINE SECTION ******/
+
+#tagline img {
+  width: 80%;
+}
+
+/****** PROCESS SECTION ******/
+
+#process {
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  margin: 0 auto;
+  width: 100%;
+  background: url('../img/process-line-tablet.png') no-repeat 0px 0px #f7f7f7;
+  background-position: 21% 60%;
+  background-size: auto;
+}
+
+#process .full-width {
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  margin-bottom: 70px;
+}
+
+#process h2 {
+  font-size: 3em;
+  text-align: center;
+  margin-top: 75px;
+  margin-bottom: 10px;
+}
+
+#process .step-one,
+#process .step-two,
+#process .step-three,
+#process .step-four {
+display: flex;
+justify-content: flex-start;
+align-items: flex-start;
+flex-flow: column wrap;
+width: 55%;
+padding-left: 100px;
+}
+
+#process h4 {
+  font-size: 1.25em;
+  letter-spacing: 1px;
+  text-align: left;
+  text-transform: uppercase;
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
+#process p {
+  font-size: 0.875em;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+
+/****** THIS OR THAT SECTION ******/
+
+#this-or-that img {
+  width: 98%;
+}
+
+/****** CONTACT SECTION ******/
+
+#contact h1 {
+  font-size: 2.5em;
+}
+
+#contact h2 {
+  font-size: 1.125em;
+}
+
+#contact .connect img {
+  width: 70%;
+}
+
+#contact ul li {
+  padding: 5px;
+  text-align: center;
+}
+
+
+/****** FOOTER ******/
+
+
+#footer p, #footer img {
+  text-transform: uppercase;
+  padding: 0px 10px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#footer p {
+  font-size: .625em;
+}
+
+.footer-icon {
+  width: 15%;
+}
+
+}
+
+
+
+ @media only screen and (max-width: 767px) {
+  /* MOBILE - Style adjustments for viewports that meet the condition */
+}
+
  
  @media print,
    (-webkit-min-device-pixel-ratio: 1.25),
