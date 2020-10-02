@@ -669,182 +669,185 @@ nav ul li a {
   }
 
   #about .full-width {
-    margin-bottom: 40px;
+    margin-bottom: 70px;
   }
 
 
-#about img {
-  margin-bottom: 20px;
-}
-
-#about .half-width-bio {
-  margin-bottom: 0px;
-}
-
-  #about h1 {
-      width: 75%;
-      font-size: 7.8125em;
+  #about img {
+    margin: 0;
+    width: 325px;
+    height: 425px;
+    object-fit: cover;
   }
 
-  #about h3 {
-      font-size: 1.5em;
-      margin-right: 50px;
+  #about .half-width-bio {
+    margin-bottom: 0px;
   }
 
-  .conjunction-emphasis {
-      font-size: 1.5em;
+    #about h1 {
+        width: 75%;
+        font-size: 7.8125em;
+    }
+
+    #about h3 {
+        font-size: 1.5em;
+        margin-right: 50px;
+    }
+
+    .conjunction-emphasis {
+        font-size: 1.5em;
+    }
+
+    #about p {
+        font-size: 0.875em;
+        margin-right: 80px;
+    }
+
+    /** PORTFOLIO SECTION **/
+
+  #portfolio h2 {
+      font-size: 3em;
   }
 
-  #about p {
-      font-size: 0.875em;
-      margin-right: 80px;
+  #portfolio h4 {
+      font-size: 1em;
   }
 
-  /** PORTFOLIO SECTION **/
+  .top-left-project,
+  .top-middle-project,
+  .top-right-project, 
+  .bottom-left-project,
+  .bottom-middle-project,
+  .bottom-right-project {
+    width: 50%;
+    background-size: 80%;
+  }
 
-#portfolio h2 {
-    font-size: 3em;
-}
+  #portfolio h3 {
+      font-size: 1.875em;
+  }
 
-#portfolio h4 {
-    font-size: 1em;
-}
+  #portfolio p {
+    font-size: 0.75em;;
+  }
 
-.top-left-project,
-.top-middle-project,
-.top-right-project, 
-.bottom-left-project,
-.bottom-middle-project,
-.bottom-right-project {
-  width: 50%;
-  background-size: 80%;
-}
+  #portfolio .portfolio-button {
+      font-size: 1em;
+  }
 
-#portfolio h3 {
-    font-size: 1.875em;
-}
+  /****** TAGLINE SECTION ******/
 
-#portfolio p {
-  font-size: 0.75em;;
-}
-
-#portfolio .portfolio-button {
-    font-size: 1em;
-}
-
-/****** TAGLINE SECTION ******/
-
-#tagline img {
-  width: 80%;
-}
+  #tagline img {
+    width: 80%;
+  }
 
 /****** PROCESS SECTION ******/
 
-#process {
-  background-color: #f7f7f7;
+  #process {
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    margin: 0 auto;
+    width: 100%;
+    background: url('../img/process-line-tablet.png') no-repeat 0px 0px #f7f7f7;
+    background-position: 21% 60%;
+    background-size: auto;
+  }
+
+  #process .full-width {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    margin-bottom: 70px;
+  }
+
+  #process h2 {
+    font-size: 3em;
+    text-align: center;
+    margin-top: 75px;
+    margin-bottom: 10px;
+  }
+
+  #process .step-one,
+  #process .step-two,
+  #process .step-three,
+  #process .step-four {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-  margin: 0 auto;
-  width: 100%;
-  background: url('../img/process-line-tablet.png') no-repeat 0px 0px #f7f7f7;
-  background-position: 21% 60%;
-  background-size: auto;
-}
-
-#process .full-width {
-  display: flex; 
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   flex-flow: column wrap;
-  margin-bottom: 70px;
-}
+  width: 55%;
+  padding-left: 100px;
+  }
 
-#process h2 {
-  font-size: 3em;
-  text-align: center;
-  margin-top: 75px;
-  margin-bottom: 10px;
-}
+  #process h4 {
+    font-size: 1.25em;
+    letter-spacing: 1px;
+    text-align: left;
+    text-transform: uppercase;
+    margin-top: 30px;
+    margin-bottom: 0;
+    padding: 0;
+  }
 
-#process .step-one,
-#process .step-two,
-#process .step-three,
-#process .step-four {
-display: flex;
-justify-content: flex-start;
-align-items: flex-start;
-flex-flow: column wrap;
-width: 55%;
-padding-left: 100px;
-}
-
-#process h4 {
-  font-size: 1.25em;
-  letter-spacing: 1px;
-  text-align: left;
-  text-transform: uppercase;
-  margin-top: 30px;
-  margin-bottom: 0;
-  padding: 0;
-}
-
-#process p {
-  font-size: 0.875em;
-  text-align: left;
-  margin-bottom: 0;
-  padding: 0;
-}
+  #process p {
+    font-size: 0.875em;
+    text-align: left;
+    margin-bottom: 0;
+    padding: 0;
+  }
 
 
 /****** THIS OR THAT SECTION ******/
 
-#this-or-that {
-  min-height: 440px;
-  background-size: cover;
-  padding: 20px 0;
-}
+  #this-or-that {
+    min-height: 440px;
+    background-size: cover;
+    padding: 20px 0;
+  }
 
 /****** CONTACT SECTION ******/
 
-#contact h1 {
-  font-size: 2.5em;
-}
+  #contact h1 {
+    font-size: 2.5em;
+  }
 
-#contact h2 {
-  font-size: 1.125em;
-}
+  #contact h2 {
+    font-size: 1.125em;
+  }
 
-#contact .connect img {
-  width: 70%;
-}
+  #contact .connect img {
+    width: 70%;
+  }
 
-#contact ul li {
-  padding: 5px;
-  text-align: center;
-}
-
-
-/****** FOOTER ******/
+  #contact ul li {
+    padding: 5px;
+    text-align: center;
+  }
 
 
-#footer p, #footer img {
-  text-transform: uppercase;
-  padding: 0px 10px;
-  text-align: center;
-  vertical-align: middle;
-}
+  /****** FOOTER ******/
 
-#footer p {
-  font-size: .625em;
-}
 
-.footer-icon {
-  width: 15%;
-}
+  #footer p, #footer img {
+    text-transform: uppercase;
+    padding: 0px 10px;
+    text-align: center;
+    vertical-align: middle;
+  }
 
-}
+  #footer p {
+    font-size: .625em;
+  }
+
+  .footer-icon {
+    width: 15%;
+  }
+
+  }
 
 
 
